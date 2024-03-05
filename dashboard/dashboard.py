@@ -5,11 +5,11 @@ import matplotlib.dates as mdates
 import seaborn as sns
 import locale
 
-orders_with_payments = pd.read_csv('./orders_with_payments.csv')
-orders_df = pd.read_csv('./orders.csv')
+orders_with_payments = pd.read_csv('dashboard/orders_with_payments.csv')
+orders_df = pd.read_csv('dashboard/orders.csv')
 orders_with_payments['order_approved_at'] = pd.to_datetime(orders_with_payments['order_approved_at'])
 orders_df['order_approved_at'] = pd.to_datetime(orders_df['order_approved_at'])
-customer_rfm = pd.read_csv('./customer_rfm.csv')
+customer_rfm = pd.read_csv('dashboard/customer_rfm.csv')
 
 st.title('E-Commerce Data Analysis :sparkle:')
 
